@@ -25,7 +25,7 @@ function Header(props: IHeaderProps) {
         </div>
         <div className="header-box-right">
             <button className="login-link button-lift" onClick={handleClick}>Log In</button>
-            <button className="signup-button button-lift">Sign Up</button>
+            <button className="signup-button button-lift" onClick={handleClick}>Sign Up</button>
         </div>
     </header>
 }
