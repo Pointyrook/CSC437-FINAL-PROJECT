@@ -76,7 +76,7 @@
 }
 
 .nav-box a {
-    padding: 1.5rem;
+    padding: 1.93rem 1.5rem;
 
     background-image: var(--gradient-blue);
     color: transparent;
@@ -105,6 +105,7 @@
     color: var(--color-darksage);
     background-color: white;
     text-decoration: none;
+    border: none;
 }
 
 .signup-button {
@@ -319,7 +320,7 @@
 
 .main-giant-button {
     height: 10rem;
-    width: 18rem;
+    width: 17rem;
     padding: 2rem 1rem;
 
     font-size: 1.15em;
@@ -338,6 +339,9 @@
 }
 
 .dropdown-box {
+    width: fit-content;
+    height: fit-content;
+    margin: 1rem auto auto auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -345,7 +349,7 @@
 }
 
 .dropdown-options-box {
-    width: 18rem;
+    width: 17rem;
     display: flex; /* none */
     flex-direction: column;
     justify-content: center;
@@ -516,6 +520,26 @@
 
 .sr-page-buttons-box > button:hover {
     color: var(--color-gray);
+    background-color: white;
+}
+
+/* MODAL STYLING */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-display-box {
+    padding: 2rem;
     background-color: white;
 }
 

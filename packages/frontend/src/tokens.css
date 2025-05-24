@@ -1,0 +1,84 @@
+:root {
+    --color-darkblue: #002f95;
+    --color-lightblue: #76c5ff;
+    --gradient-blue: linear-gradient(to bottom right, var(--color-darkblue), var(--color-lightblue));
+
+    --color-gray: #5e646f;
+    --color-lightgray: #acb3c1;
+    --gradient-gray: linear-gradient(to bottom right, var(--color-gray), var(--color-lightgray), white);
+
+    --color-sage: #79d9c2;
+    --color-darksage: #5aab97;
+    --gradient-sageleft: linear-gradient(to left, var(--color-sage), white);
+    --gradient-sageright: linear-gradient(to right, var(--color-sage), white, white);
+}
+
+.dark-mode {
+    * {
+        color: white;
+    }
+
+    --color-darkblue: #001b54;
+    --color-lightblue: #2b55af;
+    --gradient-blue: linear-gradient(to bottom right, var(--color-darkblue), var(--color-lightblue));
+
+    --color-gray: #5e646f;
+    --color-lightgray: #acb3c1;
+    --gradient-gray: linear-gradient(to bottom right, black, var(--color-gray), black);
+
+    --color-sage: #347062;
+    --color-darksage: #21443b;
+    --gradient-sageleft: linear-gradient(to left, var(--color-sage), black);
+    --gradient-sageright: linear-gradient(to right, var(--color-sage), black, black);
+
+    background-color: black;
+
+    .header-title {
+        background-image: none;
+        color: var(--color-lightblue);
+    }
+
+    .header-box-right {
+        background-image: none;
+    }
+
+    .nav-box a {
+        background-image: none;
+        color: var(--color-lightblue);
+    }
+
+    .nav-box a:hover {
+        background: var(--gradient-blue);
+    }
+
+    .search-bar {
+        background-image: var(--gradient-blue);
+    }
+
+    .big-gradient-background {
+        background-color: var(--color-gray);
+        background-image: none;
+    }
+
+    .button-lift {
+        color: white;
+        background-image: var(--gradient-blue);
+    }
+
+    .main-giant-button {
+        background-color: var(--color-sage);
+    }
+
+    .ct-main-text {
+        text-shadow: none;
+    }
+
+    .modal-display-box {
+        background-color: black;
+    }
+}
+
+@font-face {
+    font-family: 'new-font';
+    src: url('Figtree-VariableFont_wght.ttf') format('truetype');
+}
